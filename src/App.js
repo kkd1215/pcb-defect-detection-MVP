@@ -6,10 +6,12 @@ import AuthPage from 'pages/AuthPage';
 import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import ReportsPage from './pages/ReportsPage';
 import './styles/reduction.scss';
 
 const ProcessPage = React.lazy(() => import('pages/ProcessPage'));
+const DataPage = React.lazy(() => import('pages/DataPage'));
+const InsightsPage = React.lazy(() => import('pages/InsightsPage'));
+const ReportsPage = React.lazy(() => import('pages/ReportsPage'));
 
 const getBasename = () => {
   return `/${process.env.PUBLIC_URL.split('/').pop()}`;
@@ -42,25 +44,8 @@ class App extends React.Component {
               <React.Suspense fallback={<PageSpinner />}>
                 <Route exact path="/" component={ProcessPage} />
                 <Route exact path="/reports" component={ReportsPage} />
-                {/* <Route exact path="/login-modal" component={AuthModalPage} />
-                <Route exact path="/buttons" component={ButtonPage} />
-                <Route exact path="/cards" component={CardPage} />
-                <Route exact path="/widgets" component={WidgetPage} />
-                <Route exact path="/typography" component={TypographyPage} />
-                <Route exact path="/alerts" component={AlertPage} />
-                <Route exact path="/tables" component={TablePage} />
-                <Route exact path="/badges" component={BadgePage} /> */}
-                {/* <Route
-                  exact
-                  path="/button-groups"
-                  component={ButtonGroupPage}
-                /> */}
-                {/* <Route exact path="/dropdowns" component={DropdownPage} />
-                <Route exact path="/progress" component={ProgressPage} />
-                <Route exact path="/modals" component={ModalPage} />
-                <Route exact path="/forms" component={FormPage} />
-                <Route exact path="/input-groups" component={InputGroupPage} />
-                <Route exact path="/charts" component={ChartPage} /> */}
+                <Route exact path="/keyInsights" component={InsightsPage} />
+                <Route exact path="/data" component={DataPage} />
               </React.Suspense>
             </MainLayout>
             <Redirect to="/" />

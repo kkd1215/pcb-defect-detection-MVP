@@ -34,7 +34,7 @@ class AuthPage extends React.Component {
             <AuthForm
               authState={this.props.authState}
               onChangeAuthState={this.handleAuthState}
-              onLogoClick={this.handleLogoClick}
+              onLogin={this.handleLogoClick}
             />
           </Card>
         </Col>

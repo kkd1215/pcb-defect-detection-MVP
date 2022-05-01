@@ -83,6 +83,18 @@ class ProcessPage extends React.Component {
                       </FormText>
                     </Col>
                   </FormGroup>
+                  <FormGroup row>
+                    <Label for="exampleEmail" sm={2}>
+                      Connect a device
+                    </Label>
+                    <Col sm={10}>
+                      <Input
+                        type="text"
+                        name="Connector_ID"
+                        placeholder="Please enter a connector ID"
+                      />
+                    </Col>
+                  </FormGroup>
                   <FormGroup check row>
                     <Col sm={{ size: 10 }}>
                       <Button>Submit</Button>

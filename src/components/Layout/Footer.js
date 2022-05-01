@@ -8,7 +8,7 @@ const Footer = () => {
     <Navbar>
       <Nav navbar>
         <NavItem>
-         <span style={{fontWeight: 600}}> Electro <span style={{color: 'red'}}>Spection</span> {d.getFullYear()}</span>
+         <span style={{fontWeight: 600}}> Electro<span style={{color: 'red'}}>spection</span> {d.getFullYear()}</span>
         </NavItem>
       </Nav>
     </Navbar>

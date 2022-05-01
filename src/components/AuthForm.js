@@ -1,4 +1,4 @@
-import logo200Image from 'assets/img/logo/logo_200.png';
+import logo200Image from 'assets/img/logo/6.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -17,6 +17,7 @@ class AuthForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.props.onLogin();
   };
 
   renderButtonText() {
@@ -48,7 +49,7 @@ class AuthForm extends React.Component {
             <img
               src={logo200Image}
               className="rounded"
-              style={{ width: 60, height: 60, cursor: 'pointer' }}
+              style={{ width: 250, height: 130, cursor: 'pointer' }}
               alt="logo"
             />
           </div>
@@ -73,7 +74,7 @@ class AuthForm extends React.Component {
           block
           onClick={this.handleSubmit}
         >
-          <Link style={{textDecoration: 'none', color: 'white'}} to={{ pathname: '/' }}>{this.renderButtonText()}</Link>
+        {this.renderButtonText()}
         </Button>
 
         {children}
