@@ -14,7 +14,7 @@ const InsightsPage = React.lazy(() => import('pages/InsightsPage'));
 const ReportsPage = React.lazy(() => import('pages/ReportsPage'));
 
 const getBasename = () => {
-  return `/${process.env.PUBLIC_URL.split('/').pop()}`;
+  return `/`;
 };
 
 class App extends React.Component {
