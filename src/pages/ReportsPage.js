@@ -69,7 +69,7 @@ const data = [
   {
     batchName: '6242-7053-0151',
     unit: '39',
-    defect: 'Spur',
+    defect: 'Excessive Copper',
   },
   {
     batchName: '8034-1623-1179',
@@ -94,7 +94,7 @@ const data = [
   {
     batchName: '0741-2712-8623',
     unit: '76',
-    defect: 'Spur',
+    defect: 'Excessive Copper',
   },
   {
     batchName: '1523-8326-9238',
@@ -104,7 +104,7 @@ const data = [
   {
     batchName: '7639-7053-8812',
     unit: '49',
-    defect: 'Spur',
+    defect: 'Excessive Copper',
   },
   {
     batchName: '5402-9098-0812',

@@ -62,7 +62,7 @@ class ProcessPage extends React.Component {
                       </FormGroup>
                       <FormGroup check>
                         <Label check>
-                          <Input type="checkbox" /> Spur
+                          <Input type="checkbox" /> Excessive Copper
                         </Label>
                       </FormGroup>
                       <FormGroup check>
